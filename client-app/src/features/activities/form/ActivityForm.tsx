@@ -5,7 +5,6 @@ import { Button, Form, Segment } from "semantic-ui-react";
 import LoadingComponent from "../../../app/layout/LoadingComponent";
 import { useStore } from "../../../app/stores/store";
 import { v4 as uuid } from "uuid";
-import { link } from "fs";
 import { Link } from "react-router-dom";
 
 export default observer(function ActivityForm() {
@@ -35,7 +34,7 @@ export default observer(function ActivityForm() {
       console.log(id);
       loadActivitity(id).then((activity) => setActivity(activity!));
     }
-  }, [id]);
+  }, [id, loadActivitity]);
 
   function handleSubmit() {
     if (activity.id.length === 0) {
