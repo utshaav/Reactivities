@@ -4,7 +4,7 @@ import { useParams } from "react-router";
 import { Grid } from "semantic-ui-react";
 import LoadingComponent from "../../../app/layout/LoadingComponent";
 import { useStore } from "../../../app/stores/store";
-import ActivityDetailedHeader from "./ActivitiesDetailedHeader";
+import ActivityDetailedHeader from "./ActivitiyDetailedHeader";
 import ActivityDetailedChat from "./ActivityDetailedChat";
 import ActivityDetailedInfo from "./ActivityDetailedInfo";
 import ActivityDetailedSidebar from "./ActivityDetailedSidebar";
